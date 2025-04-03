@@ -1,6 +1,6 @@
 {
   "name": "q-tag",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Quasar Tag- Clean, Modern &amp Alternative Chip for Developers using Quasar",
   "main": "index.js",
   "scripts": {

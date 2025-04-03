@@ -1,6 +1,6 @@
 <template>
-  <q-chip :class="`base ${props.type}`" :outline="props.outline" :size="props.size">
-    <div class="row items-center poppins-bold">{{ props.text }}</div>
+  <q-chip :class="`base ${props.type} ${props.class}`" :outline="props.outline" :size="props.size">
+    <div class="row items-center">{{ props.text }}</div>
   </q-chip>
 </template>
 
@@ -25,6 +25,10 @@ const props = defineProps({
     type: String,
     required: false,
     default: 'md'
+  },
+  class: {
+    type: String,
+    required: false,
   }
 })
 
@@ -46,6 +50,12 @@ onMounted(() => {
 .info {
   background-color: #e0f7fa;
   color: #00796b;
+}
+
+.warn {
+  background-color: #fff3e0;
+  color: #f57c00;
+  border: 1px solid #f57c00;
 }
 
 .success {
